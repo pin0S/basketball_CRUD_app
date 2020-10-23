@@ -1,0 +1,7 @@
+<h1>NBA Teams</h1>
+
+<div class="teams-container">
+<%= @teams.each do |team| %>
+    <%= render partial: "team_card", locals: {team: team} %>
+<% end %>
+</div>

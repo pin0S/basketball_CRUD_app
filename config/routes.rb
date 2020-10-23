@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+    #teams routes
+    get '/teams', to: 'teams#index'
+    get '/team/:id', to: 'teams#show', as: "team"
 end
