@@ -1,6 +1,6 @@
 <h1>Add New Player</h1>
 
-<%= form_with scope: :player, local: true do |form| %>
+<%= form_with scope: :player, url: players_path, local: true do |form| %>
     <%= form.label :name %><br>
     <%= form.text_field :name%><br><br>
     <%= form.label :school %><br>
